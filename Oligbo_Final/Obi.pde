@@ -48,8 +48,8 @@ class Obi implements Sprite {
     if (y>=height-150) {
       y=height-150;
       moveY=-2;
-    } else if (y<= -5) {
-      y=-5;
+    } else if (y<= 0) {
+      y=0;
       moveY=2;
     }
   }
@@ -191,7 +191,7 @@ class Obi implements Sprite {
       for (int b=0; b<step; b=b+step) {
         stroke(mycolor3);
         fill(mycolor2);
-        ellipse(x+99, y-50, 15, 15);
+        ellipse(x+99, y-50, 25, 25);
       }
     } else {
       stroke(mycolor2);
